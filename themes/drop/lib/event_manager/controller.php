@@ -1,3 +1,0 @@
-<?php
-
-// logica gestione eventi
