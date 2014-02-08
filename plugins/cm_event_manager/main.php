@@ -1,15 +1,16 @@
 <?php 
 /**
- * Plugin Name: Drop Event Manager
+ * Plugin Name: Creative Muffin Event Manager
  * Plugin URI: 
  * Description: Manages Evenets.
  * Version: 1.0
- * Author: Lorenzo Varas
- * Author URI: http://www.creativemuffin.it/lnz.varas
+ * Author: Lorenzo Varas, Luca Santomauro
+ * Author URI: http://www.creativemuffin.it
  * License: GPL2
  */
-// creating events custom post type
-class events {
+
+
+class cm_events {
 
 	public function __construct()
 	{
@@ -139,13 +140,12 @@ class events {
 	}
 }
 
-// Adding event post type
-function sonar_post_types ()
+function cm_event_manager ()
 {
-	new events();
+	new cm_events();
 } 
 
-add_action('init', "sonar_post_types");
+add_action('init', "cm_event_manager" );
 
 
 
