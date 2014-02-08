@@ -15,5 +15,4 @@ function drop_scripts() {
 	wp_enqueue_style("main_style" , get_template_directory_uri() . "/style.css", array("normalize"));
 } 
 add_action( 'wp_enqueue_scripts', 'drop_scripts');
-
-?> 
+ 
